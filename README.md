@@ -8,14 +8,19 @@ This is a TensorFlow study guide, I hope to help you!
 
 - clone project
 
+    
+    git clone https://github.com/Kate-liu/TensorFlow.git
+
 
 - TensorFlow Introduce
 
     [TensorFlowIntroduce](./TensorFlowIntroduce/README.md)
 
-- TensorFlow Start
 
-    []()
+- TensorFlow Development Environment
+
+    [TensorFlowDevelopmentEnvironment](./TensorFlowDevelopmentEnvironment/README.md)
+    
     
 - TensorFlow Basic Concept
 
@@ -30,7 +35,11 @@ This is a TensorFlow study guide, I hope to help you!
 
 
 
+
+
 # Tutorials
+
+- [tensorflow](https://github.com/tensorflow/tensorflow)
 
 - [TensorFlow.org](https://www.tensorflow.org/)
 
