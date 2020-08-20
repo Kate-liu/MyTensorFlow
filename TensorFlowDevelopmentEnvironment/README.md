@@ -35,7 +35,7 @@
 - venv
     - virtualenv --system-site-packages -p python2.7 ./venv
 - tensorflow
-    - sources ./venv/bin/activate
+    - source ./venv/bin/activate
     - pip install tensorflow==1.12.0
     - pip list
     - python -c "import tensorflow as tf"
@@ -63,6 +63,52 @@ print(sess.run(hello))
         - https://en.wikipedia.org/wiki/Intel
     - AMD
         - https://en.wikipedia.org/wiki/Advanced_Micro_Devices
+
+
+## Jupyter Notebook TensorFlow
+
+- Install Jupyter: 
+```shell script
+source ./venv/bin/activate
+
+pip install jupyter
+
+python –m ipykernel install --user --name=venv
+
+# check kernel list
+jupyter kernelspec list
+
+# open jupyter
+jupyter notebook 
+
+deactivate
+```
+
+
+- Demo
+	- Neural Network Overview
+	- MNIST Dataset Overview
+
+
+
+
+
+## Docker TensorFlow
+
+- Install Docker App
+- Run Docker App
+- Pull a TensorFlow Docker image
+    - docker pull tensorflow/tensorflow:nightly-jupyter
+- Start a TensorFlow Docker container
+    - docker run -it -p 8888:8888 -v $PWD:/Users/rmliu/Desktop/tensorflow:nightly-jupyter
+    - eg：(notebook-examples-path):/Users/rmliu/Desktop/tensorflow:nightly-jupyter
+
+
+
+
+
+
+
 
 
 
