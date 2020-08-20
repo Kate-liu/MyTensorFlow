@@ -2,7 +2,7 @@
 
 - This is a TensorFlow Development Environment practice.
 
-- [TensorFlowDevelopmentEnvironment](./TensorFlowDevelopmentEnvironment.pdf)
+- [TensorFlowDevelopmentEnvironment](Data/TensorFlowDevelopmentEnvironment.pdf)
 
 
 
@@ -88,6 +88,7 @@ deactivate
 - Demo
 	- Neural Network Overview
 	- MNIST Dataset Overview
+	- link: [MNISTDatasetNeuralNetwork](Data/MNISTDatasetNeuralNetwork.ipynb)
 
 
 

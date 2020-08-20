@@ -5,7 +5,7 @@ You can read `TensorFlowOutline.xmind` or read the next text.
 
 # TensorFlow Introduce Detail
 
-- reference: [TensorFlowIntroduce](TensorFlowIntroduce.pdf)
+- reference: [TensorFlowIntroduce](Data/TensorFlowIntroduce.pdf)
 
 - AI History
     - 1950-1980
