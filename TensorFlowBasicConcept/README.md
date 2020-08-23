@@ -157,9 +157,46 @@ tf.train.saver.save(sess, 'my-model', global_step=0) # ==> filename: 'my-model-0
 
 
 
+## Session
+- 会话提供了估算张量 和执行操作的运行环境，它是发放计算任务的客户端，所有计算任务都由它连接的执行引擎完成
+- 会话的典型使用流程
+    - 创建回话
+        - sess = tf.Session
+    - 估算或执行操作
+        - sess.run
+    - 关闭回话
+        - sess.close()
+        
+- 参数名称
+    - target
+        - 会话连接的执行引擎
+    - graph
+        - 会话加载的数据流图
+    - config
+        - 会话启动时的配置项
+
+- 获取张量值的两种方法
+    - 估算张量
+        - Tensor evel
+    - 执行操作
+        - Operation.run
+    - 两种方法底层都是调用的Session.run（）方法
+
+![](./Data/tensorfloeSession.PNG)
 
 
 
+- 会话执行原理
+    - 首先，程序内部提取操作依赖的所有前置操作，这些操作的结点共同组成一幅子图
+    - 然后，程序会将子图中的计算结点，存储结点和数据结点按照各自的执行设备分类，相同设备上的结点组成了一副局部图
+    - 最后，每一个设备上的局部图在实际执行时，根绝节点间的依赖关系将各个节点有序的加载到设备上执行
+    
+- 会话本地执行
+    - 单机程序，相应机器上的不同编号CPU或者GPU就是不同的设备，可以在创建节点的时候执行执行该节点的设备
+    - 本地执行，不走python的整个流程控制，而是通过session连接一个server端，进行执行
+
+![](./Data/tensorfloeSessionClient.PNG)
+![](./Data/tensorfloeSessionServer.PNG)
 
 
 
