@@ -39,7 +39,8 @@ This is a TensorFlow study guide, I hope to help you!
 
 - Housing price forecasting model
 
-    []()
+    [HousingPriceForecastingModel](./HousingPriceForecastingModel/README.md)
+    
     
 - Handwritten numeral recognition model
 
