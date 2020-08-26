@@ -44,7 +44,8 @@ This is a TensorFlow study guide, I hope to help you!
     
 - Handwritten numeral recognition model
 
-    []()
+    [HandwrittenNumeralRecognitionModel](./HandwrittenNumeralRecognitionModel/README.md)
+    
     
 - Verification code recognition model
 

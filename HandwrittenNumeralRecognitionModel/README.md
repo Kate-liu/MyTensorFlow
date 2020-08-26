@@ -1,0 +1,19 @@
+# Handwritten numeral recognition model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
