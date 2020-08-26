@@ -76,16 +76,53 @@
 
 
 
+## tensorboard可视化模型数据流图
+
+- TensorBoard可视化工具
+- TensorBoard可视化训练
+- TensorBoard可视化统计数据
+- TensorBoard可视化数据分布
+- TensorBoard可视化数据
+- TensorBoard可视化数据流图
+- TensorBoard使用流程
+    - 用户使用FileWriter实例将数据写入时间文件，启动TensorBoard程序，
+    加载事件文件中的序列化数据，从而可以子啊各个面板中展示对应的可视化对象
+
+![](./Data/Tensorflow使用流程.PNG)
+
+- tf.summary模块介绍
+    - Summary Ops
+    - FileWriter
+    - Summary
+    - Event
+
+![](./Data/tf.summary.PNG)
+
+- 可视化数据流图工作流
+    - 创建数据流图
+        - which one is better?
+        - 名字作域与抽象节点
+            - tf.name_scope
+    - 创建FileWriter
+    - 启动TendorBoard
+        - tensorboard --logdir ./ --host localhost
+
+- Code
+    - 可视化数据流图
+        - [TensorBoardVisualizeGraph](./TensorBoardVisualizeGraph.py)
 
 
 
+## 实战tensorflow房价预测
+
+- 实战tensorflow房价预测工作流
+
+![](./Data/实战tensorflow房价预测工作流.PNG)
 
 
-
-
-
-
-
+- Code
+    - 实战房价预测
+        - []()
 
 
 
