@@ -110,6 +110,8 @@
 - Code
     - 可视化数据流图
         - [TensorBoardVisualizeGraph](./TensorBoardVisualizeGraph.py)
+    - 可视化损失值
+        - [MultiDataShowLoss](./MultiDataShowLoss.py)    
 
 
 
@@ -122,7 +124,10 @@
 
 - Code
     - 实战房价预测
-        - []()
+        - [DataProcess](./JupyterCode/DataProcess.ipynb)
+        - [TrainingModel](./JupyterCode/TrainingModel.ipynb)
+        - [VisualizeGraph](./JupyterCode/VisualizeGraph.ipynb)
+        - [VisualizeLoss](./JupyterCode/VisualizeLoss.ipynb)
 
 
 

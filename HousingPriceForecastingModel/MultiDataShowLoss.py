@@ -4,6 +4,8 @@
 import tensorflow as tf
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 # ps: if error, then pip install tensorflow==1.13.1
@@ -68,16 +70,32 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     # 创建FileWriter实例，并传入当前会话加载的数据流图
-    writer = tf.summary.FileWriter("./summary/linear1", sess.graph)
+    writer = tf.summary.FileWriter("./summary/linear2", sess.graph)
+
+    # 记录所有损失值
+    loss_data = []
 
     # 开始训练模型，
     # 因为训练集较小，所以每轮都使用全量数据训练，如果训练量大，采用批梯度下降算法
     for e in range(1, epoch + 1):
-        sess.run(train_op, feed_dict={x: x_data, y: y_data})
+        _, loss, w = sess.run([train_op, loss_op, W], feed_dict={x: x_data, y: y_data})
+
+        loss_data.append(float(loss))
 
         if e % 10 == 0:
-            loss, w = sess.run([loss_op, W], feed_dict={x: x_data, y: y_data})
             log_str = "Epoch %d \t Loss=%.4g \t Model: y=%.4gx1 + %.4gx2 + %.4g"
             print(log_str % (e, loss, w[1], w[2], w[0]))
 
 writer.close()
+
+# ============================================================================================================
+# show loss
+print(len(loss_data))
+print(loss_data)
+print(np.arange(epoch))
+
+sns.set(context="notebook", style="whitegrid", palette="dark")
+ax = sns.lineplot(x="epoch", y="loss", data=pd.DataFrame({'loss': loss_data, 'epoch': np.arange(epoch)}))
+ax.set_xlabel('epoch')
+ax.set_ylabel("loss")
+plt.show()

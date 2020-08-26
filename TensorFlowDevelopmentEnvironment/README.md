@@ -34,9 +34,21 @@
     - sudo pip install -U virtualenv
 - venv
     - virtualenv --system-site-packages -p python2.7 ./venv
+    - virtualenv --system-site-packages -p python3.7 ./py3
+    
 - tensorflow
-    - source ./venv/bin/activate
-    - pip install tensorflow==1.12.0
+    - source ./venv/bin/activate  # py version = 2.7
+    - source ./py3/bin/activate  # py version = 3.7
+    
+    - pip install tensorflow==1.12.0  # py version = 2.7
+    - pip install tensorflow==1.13.1  # py version = 3.7
+    
+    - pip install jupyter
+    - pip install seaborn
+    - pip install matplotlib
+    - pip install pandas
+    - pip install numpy
+    - ...
     - pip list
     - python -c "import tensorflow as tf"
     - deactivate
@@ -73,7 +85,8 @@ source ./venv/bin/activate
 
 pip install jupyter
 
-python –m ipykernel install --user --name=venv
+python –m ipykernel install --user --name=venv  # py version = 2.7
+python3.7 –m ipykernel install --user --name=py3  # py version = 3.7
 
 # check kernel list
 jupyter kernelspec list

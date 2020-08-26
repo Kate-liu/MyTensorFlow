@@ -2,8 +2,6 @@
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from mpl_toolkits import mplot3d
 
 
 def normalize(data):
@@ -31,5 +29,3 @@ print(x_data.shape, type(x_data))
 print(y_data.shape, type(y_data))
 # (47, 3) <class 'numpy.ndarray'>
 # (47, 1) <class 'numpy.ndarray'>
-
-
