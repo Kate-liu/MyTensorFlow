@@ -1,6 +1,12 @@
 # Handwritten numeral recognition model
 
 
+## Install package
+
+- pip install keras==2.2.4
+- pip install tensorflow==1.13.1
+
+
 
 ## 手写体数字MNIST数据集介绍
 - MNIST 数据集介绍
@@ -34,6 +40,96 @@
 
 
 ## MNIST Softmax 网络介绍
+- 感知机模型
+    - 神经感知机模型 Perceptron
+    
+- 神经网络
+    - 神经网络是多层神经元的连接
+    
+- 线性不可分
+
+- 激活函数（Activation Function）
+
+- 全连接层（fully connected layers， FC）
+
+- 前向传播
+    - 符号定义
+    - 计算过程
+    
+- 后向传播（ Back Propagation, BP）
+    - BP算法的基本思想是通过损失函数对模型参数进行求导
+    
+- MNIST Softmax 网络
+
+
+
+## 实战 MNIST Softmax 网络
+- MNIST Softmax 网络层模型
+- 加载MNIST数据集
+- 数据处理：规范化
+- 统计训练数据中各标签数量
+
+- 数据处理：One-hot编码
+    - 几种编码方式的对比
+    
+        | Binary | Gray code | One-hot  |
+        | ------ | --------- | -------- |
+        | 000    | 000       | 00000001 |
+        | 001    | 001       | 00000010 |
+        | 010    | 011       | 00000100 |
+        | 011    | 010       | 00001000 |
+        | 100    | 110       | 00010000 |
+        | 101    | 111       | 00100000 |
+        | 110    | 101       | 01000000 |
+        | 111    | 100       | 10000000 |
+        
+    - one-hot应用（Word to vector）
+      
+      ![](https://shanelynnwebsite-mid9n9g1q9y8tt.netdna-ssl.com/wp-content/uploads/2018/01/one-hot-word-embedding-vectors.png)
+    
+    
+- 使用Keras sequential model定义神经网络
+    - softmax 网络层模型    
+    ![](https://developers.google.com/machine-learning/crash-course/images/SoftmaxLayer.svg)
+
+
+- 编译模型
+[model.compile()](https://keras.io/models/sequential/#compile)
+
+```python
+compile(optimizer, loss=None, metrics=None, loss_weights=None, sample_weight_mode=None, weighted_metrics=None, target_tensors=None)
+```
+
+- 训练模型，并将指标保存到history中
+[model.fit()](https://keras.io/models/sequential/#fit)
+
+```python
+fit(x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None, validation_split=0.0, validation_data=None, shuffle=True, class_weight=None, sample_weight=None, initial_epoch=0, steps_per_epoch=None, validation_steps=None)
+```
+
+- 可视化指标
+- 保存模型
+[model.save()](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model)
+
+You can use `model.save(filepath)` to save a Keras model into a single **HDF5 file** which will contain:
+
+- the architecture of the model, allowing to re-create the model
+- the weights of the model
+- the training configuration (loss, optimizer)
+- the state of the optimizer, allowing to resume training exactly where you left off.
+
+You can then use `keras.models.load_model(filepath)` to reinstantiate your model. load_model will also take care of compiling the model using the saved training configuration (unless the model was never compiled in the first place).
+
+- 加载模型
+- 统计模型在测试集上的分类结果
+
+- Code
+    - [MNISTSoftmax](./MNISTSoftmax.py)
+
+
+
+
+
 
 
 
