@@ -128,8 +128,45 @@ You can then use `keras.models.load_model(filepath)` to reinstantiate your model
 
 
 
+## MNIST CNN 网络介绍
+- CNN 简介
+    - 卷积神经网络（ConvoluTIonal Neural Networks， 简称CNN）
+     
+- 卷积（Convolution）
+    - 卷积是分析数学中的一种基础运算， 其中对输入数据做运算时所用到的函数称为卷积核。
+    
+- 卷积层（Convolutional Layer, conv）
+    - 卷积层是使用一系列卷积核与多通道输入数据做卷积的线性计算层
+    
+- 池化层（Pooling）
+    - 池化层是用于缩小数据规模的一种非线性计算层
+    
+- Dropout 层
+    - Dropout 是常用的一种正则化方法， Dropout层是一种正则化层
+    
+- Flatten
+    - 将卷积和池化后提取的特征摊平后输入全连接网络， 这里与 MNIST softmax 网络的输入层类似
+    
+- MNIST CNN 示意图
+![](./Data/MNISTCNN示意图.PNG)
 
-
+	
+	
+## 实战 MNIST CNN 网络
+- 加载 MNIST 数据集
+- 数据处理：规范化
+- 统计训练数据中各标签数量
+- 数据处理：one-hot 编码
+- 使用 Keras sequential model 定义 MNIST CNN 网络
+- 查看 MNIST CNN 模型网络结构
+- 编译模型
+- 训练模型，并将指标保存到 history 中
+- 可视化指标
+- 保存模型
+- 加载模型
+- 统计模型在测试集上的分类结果
+- Code
+    - [MNISTCNN](./MNISTCNN.py)
 
 
 
