@@ -49,7 +49,7 @@ This is a TensorFlow study guide, I hope to help you!
     
 - Verification code recognition model
 
-    []() 
+    [VerificationCodeRecognitionModel](./VerificationCodeRecognitionModel/README.md) 
     
 - Face recognition model
 
