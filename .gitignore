@@ -6,3 +6,5 @@
 /TensorFlowBasicConcept/summary/
 /HousingPriceForecastingModel/summary/
 /HandwrittenNumeralRecognitionModel/MNIST/
+/VerificationCodeRecognitionModel/test-dataset/
+/VerificationCodeRecognitionModel/train-dataset/
