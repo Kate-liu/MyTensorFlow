@@ -84,8 +84,45 @@
     - 保存训练过程模型
     - [TrainModel](TrainModel.py)
 
-## 
+## 模型训练过程分析
+- 模型训练过程
+![](./Data/模型训练过程.PNG)
 
+- 学习率（Learning rate）
+    - 学习率与损失值变化（模型收敛速度） 直接相关
+- 优化器介绍： SGD（Stochastic Gradient Descent）
+    - 随机梯度下降
+- 优化器介绍： SGD-M（Momentum）
+- 优化器介绍： Adagrad – RMSprop – Adam
+- 优化器对比： 鞍点
+- 优化器对比： 验证码识别模型
+    - Model Accuracy
+    - Model Loss
+- Code
+    - 加载训练过程记录
+    - 训练过程可视化
+    - 定义过程可视化方法
+    - 加载预训练模型记录
+    - 准确率变化（训练集）
+    - 损失值变化（训练集）
+    - 准确率变化（测试集）
+    - 损失值变化（测试集）
+    - [TrainingAnalysis](TrainingAnalysis.py)
+    - [TrainingComparison](TrainingComparison.py)
+
+    
+## 模型部署与效果演示
+- 数据-模型-服务流水线
+![](./Data/模型部署.PNG)
+
+- 使用 Flask 快速搭建 验证码识别服务
+- 使用 Flask 启动 验证码识别服务
+    - export FLASK_ENV=development && flask run --host=0.0.0.0
+- 访问 验证码识别服务
+    - curl -X POST -F image=@2140.png 'http://localhost:5000/predict'
+
+- Code
+    - [FlaskCaptcha](app.py)
 
 
 
