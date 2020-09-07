@@ -8,3 +8,5 @@
 /HandwrittenNumeralRecognitionModel/MNIST/
 /VerificationCodeRecognitionModel/test-dataset/
 /VerificationCodeRecognitionModel/train-dataset/
+/VerificationCodeRecognitionModel/model/
+/VerificationCodeRecognitionModel/history/
