@@ -49,7 +49,60 @@
 
 
 
+## 人脸识别算法介绍
+- 人脸识别算法流程
+    - 人脸检测
+        - Face detection
+    - 人脸对齐
+        - Face Alignment
+    - 人脸特征表征
+        - Feature Representation
+        
+- 人脸识别-研究进展
+    - 早期算法：基于几何特征，模板匹配，子空间
+    - 人工特征+分类器
+    - 基于深度学习的算法
+    
+- 早期算法-线性降维
+    - 使用PCA降维得到特征脸Eigenface
+    - LDA降维的大Fisherface实现人脸识别
+    
+- 早期算法-非线性降维
+    - 流形学习是一种非线性降维方法
+    
+- 人工特征+分类器
+    - HOG,SIFT,Gabor，LBP
+    - LBP，局部二值模式特征，解决了光照敏感问题
+    - 联合贝叶斯是对贝叶斯人脸的改进方法，选用LBP和LE作为基础特征
+    - MSRA"Feature Master"
+        - 使用高维度特征在人脸验证中，以LBP为例
+        
+- 基于深度学习的人脸识别
+    - Facebook DeepFace
+        - 使用3D模型解决人脸对齐问题
+        - 使用9层深度神经网络来做人脸特征表示
+        - 损失函数使用Softmax Loss
+        - 通过特征嵌入Feature Embedding得到固定长度的人脸特征向量
+    - Google FaceNet
+        - 使用三元组锁时函数Triplet Loss
+        - 得到一个紧凑的128维人脸特征
 
+
+
+
+## 人脸检测工具介绍
+- AI开放平台
+
+- Opencv
+    - 开源计算机视觉库，Open Source Computer Vision Library
+    - pip install opencv-python
+    - 使用Opencv进行人脸检测
+        - [FaceDetectOpencv](./FaceDetectOpencv.py)
+    
+- face_recognition
+    - pip insatll face_recognition
+    - 使用face_recognition进行人脸检测
+        - [FaceDetectFaceRecognition](./FaceDetectFaceRecognition.py)
 
 
 
