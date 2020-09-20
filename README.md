@@ -29,22 +29,22 @@ This is a TensorFlow study guide, I hope to help you!
 
 - TensorFlow 2 Design Idea
     
-    []()
+    [.](.)
 
 
 - Train Model and Deploy Service
     
-    []()
+    [.](.)
 
 
 - Design Landing AI Solution
     
-    []()
+    [.](.)
 
 
 - TensorFlow 2 Advance
     
-    []()
+    [.](.)
 
 
 - TensorFlow Ending
@@ -80,17 +80,17 @@ This is a TensorFlow study guide, I hope to help you!
     
 - Shelf goods Target Detection by RetinaNet
     
-    []()
+    [.](.)
 
     
 - Shelf goods Target Recognition by ResNet
     
-    []()
+    [.](.)
 
 
 - Shelf goods Target Visualization by AI SaaS
     
-    []()
+    [.](.)
 
 
 
