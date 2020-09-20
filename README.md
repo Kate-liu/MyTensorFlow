@@ -27,6 +27,26 @@ This is a TensorFlow study guide, I hope to help you!
     [TensorFlowBasicConcept](./TensorFlowBasicConcept/README.md)
 
 
+- TensorFlow 2 Design Idea
+    
+    []()
+
+
+- Train Model and Deploy Service
+    
+    []()
+
+
+- Design Landing AI Solution
+    
+    []()
+
+
+- TensorFlow 2 Advance
+    
+    []()
+
+
 - TensorFlow Ending
 
     [TensorFlowEnding](./TensorFlowEnding/README.md)
@@ -57,7 +77,20 @@ This is a TensorFlow study guide, I hope to help you!
 
     [FaceRecognitionModel](./FaceRecognitionModel/README.md)
     
+    
+- Shelf goods Target Detection by RetinaNet
+    
+    []()
 
+    
+- Shelf goods Target Recognition by ResNet
+    
+    []()
+
+
+- Shelf goods Target Visualization by AI SaaS
+    
+    []()
 
 
 
