@@ -106,8 +106,58 @@
 
 
 
+## 解析FaceNet人脸识别模型
+- FaceNet模型介绍
+- FaceNet在复杂光照和姿态下表现出色
 
+- 模型创新点：Triplet Loss
+    - 基本人脸，Anchor
+    - 与最像的错误人脸Negative
+    - 与最不像的正确人脸Positive
+    
+- FaceNet模型架构
+    - FaceNet-NN1
+    - FaceNet-NN2
+    - NNS1
+    - NNS2
+    
+- FaceNet计算量对结果影响
+- FaceNet CNN架构对结果影响
+- FaceNet图像质量对结果影响
+- FaceNet特征空间维度对结果影响
+- FaceNet训练数据量对结果影响
 
+- FaceNet模型的创新与突破
+    - 使用Triplet Loss提到Softmax Loss
+    - 模型输出为128维人脸特征向量，而不是人脸分类结果（FaceID）
+    - 准确率创历史新高，LFW上达99.63%
+    - 模型瘦身，减少了参数和计算量
+    - 通用性好，可应用到人脸验证，识别，分类，搜索和跟踪等各种场景
+    
+		
+		
+## 实战FaceNet人脸识别模型
+- OpenFace项目介绍
+    - https://github.com/cmusatyalab/openface/
+    - OpenFace是python和torch实现的基于深度神经网络的人脸识别模型FaceNet
+- Code
+    - [FaceRecognition](./FaceRecognition.py)
+	
+	
+	
+## 测试与可视化分析
+- 人脸识别测试
+    - 欧美人
+    - 亚洲人
+    
+- 人脸识别对不同人种敏感
+    - 阈值不同
+    - 正确率不同
+    - 降维分布不同
+    
+- Code
+    - [FaceRecognition](./FaceRecognition.py)
+	
 
 
 

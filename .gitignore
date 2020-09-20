@@ -11,3 +11,6 @@
 /VerificationCodeRecognitionModel/model/
 /VerificationCodeRecognitionModel/history/
 /VerificationCodeRecognitionModel/pre-trained/
+/FaceRecognitionModel/Data/images/
+/FaceRecognitionModel/Data/orig_images/
+/FaceRecognitionModel/Data/models/
